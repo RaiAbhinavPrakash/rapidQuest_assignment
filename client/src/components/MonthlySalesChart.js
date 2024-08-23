@@ -8,7 +8,7 @@ function MonthlySalesChart() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:8000/api/total-sales/monthly');
+        const response = await axios.get('https://rapidquest-assignment-server.onrender.com/api/total-sales/monthly');
         const chartData = {
           labels: response.data.map(
             (item) => `${item._id.year}-${item._id.month.toString().padStart(2, '0')}`

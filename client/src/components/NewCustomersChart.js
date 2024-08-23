@@ -9,7 +9,7 @@ const NewCustomersChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/new-customers?interval=${interval}`);
+        const response = await fetch(`https://rapidquest-assignment-server.onrender.com/api/new-customers?interval=${interval}`);
         const data = await response.json();
         setChartData(data);
       } catch (error) {

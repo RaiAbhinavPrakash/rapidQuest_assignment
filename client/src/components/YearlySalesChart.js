@@ -8,7 +8,7 @@ function YearlySalesChart() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:8000/api/total-sales/yearly');
+        const response = await axios.get('https://rapidquest-assignment-server.onrender.com/api/total-sales/yearly');
         const chartData = {
           labels: response.data.map(item => item._id.year), 
           datasets: [

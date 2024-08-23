@@ -9,7 +9,7 @@ function QuarterlySalesChart() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:8000/api/total-sales/quarterly');
+        const response = await axios.get('https://rapidquest-assignment-server.onrender.com/api/total-sales/quarterly');
 
         const chartData = {
           labels: response.data.map(item => `Q${item._id.quarter} ${item._id.year}`),
