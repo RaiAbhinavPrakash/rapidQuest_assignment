@@ -11,7 +11,7 @@ const CustomerLifetimeValueChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/customer-lifetime-value');
+        const response = await fetch('https://rapidquest-assignment-server.onrender.com/api/customer-lifetime-value');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
