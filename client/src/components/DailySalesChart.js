@@ -13,7 +13,7 @@ function DailySalesChart() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/total-sales/daily"
+          "https://rapidquest-assignment-server.onrender.com/api/total-sales/daily"
         );
         const chartData = {
           labels: response.data.map((item) => {
