@@ -8,7 +8,7 @@ function MonthlyGrowthRateChart() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:8000/api/sales-growth-rate');
+        const response = await axios.get('https://rapidquest-assignment-server.onrender.com/api/sales-growth-rate');
         const data = response.data;
 
         const allGrowthRates = data.map(item => ({
