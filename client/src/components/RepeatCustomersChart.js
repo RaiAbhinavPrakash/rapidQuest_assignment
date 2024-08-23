@@ -10,7 +10,7 @@ const RepeatCustomersChart = () => {
     const [chartData, setChartData] = useState({});
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/repeat-customers?interval=${interval}`)
+        axios.get(`https://rapidquest-assignment-server.onrender.com/api/repeat-customers?interval=${interval}`)
             .then(response => {
                 const fetchedData = response.data;
 
